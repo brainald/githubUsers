@@ -1,0 +1,62 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.oneRow {
+    display: flex;
+}
+
+.userItem {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 18%;
+    border: 2px solid rgb(17, 1, 1);
+    margin: 2px
+}
+
+.userItem img {
+    width: 100%;
+}
+
+.userItem p {
+    text-align: center;
+}
+
+@media (max-width:550px) {
+    .userItem p {
+        font-size: x-small;
+    }
+}
